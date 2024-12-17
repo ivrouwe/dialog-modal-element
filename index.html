@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Dialog (Modal) Element</title>
+</head>
+
+<body>
+    <main>
+        <h1>Dialog (Modal) Element (based on <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/">"Dialog (Modal) Pattern | APG | WAI | W3C"</a>)</h1>
+
+        <section
+            id="section--some-section"
+            aria-labelledby="some-section"
+            is="dialog-modal-element"
+        >
+            <h2
+                id="some-section"
+                tabindex="-1"
+            >Some Section</h2>
+
+            <p>Some content.</p>
+
+            <ul>
+                <li>Some additional content</li>
+                
+                <li>In list form.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- A local copy of [WebReflection/custom-elements-builtin](https://github.com/WebReflection/custom-elements-builtin) -->
+    <script src="assets/js/webreflection-custom-elements-builtin-safari-polyfill.js"></script>
+
+    <script src="assets/js/custom-element-helpers.js"></script>
+
+    <script src="assets/js/dialog-modal-element.js"></script>
+</body>
+</html>
