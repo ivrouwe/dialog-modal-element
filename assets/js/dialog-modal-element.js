@@ -53,7 +53,9 @@ class DialogModalElement extends HTMLElement {
 
 		dialog = div.children[1];
 
-		dialog.appendChild(this.removeChild(this.children[0]));
+		dialog.appendChild(heading);
+
+		dialog.setAttribute('aria-labelledby', heading.id);
 
 		dialog.appendChild(closeControl);
 
